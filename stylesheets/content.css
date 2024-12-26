@@ -1,0 +1,371 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1.39vw;
+  gap: 1.39vw;
+}
+/* <!-- секция первая заголовок --> */
+.header {
+  width: 100%;
+}
+/* <!-- текст заголовка --> */
+
+.header-text {
+  display: flex;
+  width: 97.15vw;
+  height: 13.05vw;
+  margin-left: -0.9vw;
+}
+/* <!-- заголовок отдельные буквы --> */
+.а1 {
+  font-family: "RubikOne-Regular";
+  font-size: 18vw;
+  color: #fffb00;
+  line-height: 80%;
+  animation: cvet 1s linear infinite;
+}
+@keyframes cvet {
+  0% {
+    color: #fffb00;
+  }
+  20% {
+    color: #fffb00;
+  }
+  40% {
+    color: #fffb00;
+  }
+  60% {
+    color: rgb(0, 0, 0);
+  }
+  80% {
+    color: rgb(0, 0, 0);
+  }
+  100% {
+    color: rgb(0, 0, 0);
+  }
+}
+.v1 {
+  animation-delay: 0.125s;
+}
+.v7 {
+  animation-delay: 0.25s;
+}
+.v4 {
+  animation-delay: 0.375s;
+}
+.v5 {
+  animation-delay: 0.5s;
+}
+.v2 {
+  animation-delay: 0.625s;
+}
+.v8 {
+  animation-delay: 0.75s;
+}
+.v6 {
+  animation-delay: 0.875s;
+}
+.v3 {
+  animation-delay: 1s;
+}
+/* <!-- секция вторая --> */
+.warning {
+  display: flex;
+  gap: 1.39vw;
+}
+.warning > div {
+  width: 49vw;
+  height: 30vw;
+}
+/* <!-- секция вторая левая --> */
+.warning-left {
+  width: 50vw;
+  height: 27vw;
+  border-radius: 8px;
+  background-image: url(../img/pchelki.svg);
+  background-size: 120%;
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.warning-left-videlenie {
+  background-image: url(../img/videlenie.svg);
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+/* <!-- секция вторая правая --> */
+.warning-right {
+  width: 50vw;
+  height: 27vw;
+  gap: 1.39vw;
+  display: flex;
+  flex-direction: column;
+}
+/* <!-- секция вторая правая верхняя --> */
+.warning-right-element1 {
+  background-color: rgb(255, 255, 255);
+  width: 48vw;
+  height: 25vw;
+  border-radius: 8px;
+  background-image: url(../img/koluchaya_plashka.svg);
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.warning-right-element1-img {
+  width: 100%;
+  position: absolute;
+}
+/* <!-- секция вторая правая нижняя (бегущая строка) --> */
+.warning-right-element2 {
+  background-color: rgb(255, 255, 255);
+  width: 48vw;
+  height: 5vw;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+/* <!-- бегущая строка --> */
+.warning-tekst {
+  font-family: "HelveticaMedium";
+  font-size: 6vw;
+  color: rgb(0, 0, 0);
+  vertical-align: middle;
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: lin 4s linear infinite;
+}
+@keyframes lin {
+  0% {
+    right: -150%;
+  }
+  100% {
+    right: 200%;
+  }
+}
+.warning-tekst:hover {
+  animation-play-state: paused;
+  transition: all 0.5s ease-out;
+}
+/* <!-- секция третья --> */
+.tochki-plashka {
+  background-color: rgb(255, 255, 255);
+  width: 97.2vw;
+  height: 20.14vw;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.67vw;
+}
+.tochki-plashka-first-line {
+  width: 95.6vw;
+  height: 1.8vw;
+  display: flex;
+  flex-direction: row;
+  gap: 1.67vw;
+  margin-top: 0.7vw;
+  margin-left: 0.8vw;
+}
+.tochki-plashka-second-line {
+  width: 95.6vw;
+  height: 1.8vw;
+  display: flex;
+  flex-direction: row;
+  gap: 1.67vw;
+  margin-top: 0.7vw;
+  margin-left: 0.8vw;
+}
+.tochki-plashka-third-line {
+  width: 95.6vw;
+  height: 1.8vw;
+  display: flex;
+  flex-direction: row;
+  gap: 1.67vw;
+  margin-top: 0.7vw;
+  margin-left: 0.8vw;
+}
+.tochki-plashka-four-line {
+  width: 95.6vw;
+  height: 1.8vw;
+  display: flex;
+  flex-direction: row;
+  gap: 1.67vw;
+  margin-top: 0.7vw;
+  margin-left: 0.8vw;
+}
+.tochki-plashka-five-line {
+  width: 95.6vw;
+  height: 1.8vw;
+  display: flex;
+  flex-direction: row;
+  gap: 1.67vw;
+  margin-top: 0.7vw;
+  margin-left: 0.8vw;
+}
+.tochka {
+  width: 1.8vw;
+  height: 1.8vw;
+  transition: all 0.5s ease;
+}
+.tochka {
+  width: 1.8vw;
+  height: 1.8vw;
+  background-image: url(../img/tochka.svg);
+  background-size: 100%;
+}
+.tochka:hover {
+  transform: scale(1.5);
+  fill: #fffb00;
+}
+/* <!-- секция четвертая --> */
+.glaza {
+  display: flex;
+  gap: 1.39vw;
+}
+.glaza > div {
+  width: 97vw;
+  height: 41vw;
+}
+/* <!-- секция четвертая левая --> */
+.glaza-left {
+  background-color: rgb(0, 0, 0);
+  width: 50vw;
+  height: 41vw;
+  border-radius: 8px;
+}
+/* <!-- секция четвертая правая --> */
+.glaza-right {
+  background-color: rgb(255, 255, 255);
+  width: 50vw;
+  height: 41vw;
+  border-radius: 8px;
+  background-image: url(../img/field.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.facti {
+  background-color: rgb(255, 255, 255);
+  width: 97.15vw;
+  height: 4.5vw;
+  border-radius: 8px;
+}
+.facti-tekst {
+  font-family: "HelveticaMedium";
+  font-size: 5.7vw;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: lin 7s linear infinite;
+}
+@keyframes lin {
+  0% {
+    right: -350%;
+  }
+  100% {
+    right: 3%;
+  }
+}
+.facti-tekst:hover {
+  background-color: #000000;
+  color: #fffb00;
+  animation-play-state: paused;
+}
+.lines {
+  background-color: rgb(255, 255, 255);
+  width: 97vw;
+  height: 59vw;
+  margin-left: 0.15vw;
+}
+.ggg {
+  background-color: rgb(255, 255, 255);
+  width: 97vw;
+  height: 18.6vw;
+}
+.ggg-text {
+  font-family: "RubikOne-Regular";
+  font-size: 31vw;
+  display: flex;
+  width: 97vw;
+  height: 18.6vw;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vw;
+  color: rgb(0, 0, 0);
+}
+.trio {
+  width: 97vw;
+  height: 34vw;
+  display: flex;
+  flex-direction: row;
+  gap: 1.39vw;
+}
+.krilo {
+  background-color: rgb(255, 255, 255);
+  width: 50vw;
+  height: 34vw;
+  border-radius: 8px;
+}
+.stroika {
+  background-color: rgb(255, 255, 255);
+  width: 10vw;
+  height: 34vw;
+  border-radius: 8px;
+}
+.treugol {
+  background-color: rgb(255, 255, 255);
+  width: 34vw;
+  height: 34vw;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.3vw;
+  align-items: center;
+  justify-content: center;
+}
+.tg {
+  width: 4.1vw;
+  height: 4.3vw;
+  background-image: url(../img/treug.svg);
+  background-size: 3.8vw;
+  background-position: 80%;
+  background-repeat: no-repeat;
+  animation: rotation 3s linear infinite;
+}
+.rotation {
+  top: 0%;
+  left: 50%;
+  top: 100%;
+}
+
+.end {
+  background-color: rgb(255, 255, 255);
+  width: 97vw;
+  height: 6vw;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 1.3vw;
+}
+.fio-text {
+  font-family: "HelveticaThin";
+  font-size: 2.5vw;
+  color: #000000;
+}
+.group-text {
+  font-family: "HelveticaThin";
+  font-size: 2.5vw;
+  color: #000000;
+}
