@@ -1,6 +1,68 @@
 /* ///////////////////////// Мобильные устройства ///////////////////////// */
 @media screen and (max-width: 414px) and (orientation: portrait) {
   /* Вертикальная ориентация для мобильных устройств */
+  .warning {
+    display: flex;
+    flex-direction: column;
+  }
+  .warning > div {
+    width: 97vw;
+    height: 62vw;
+  }
+  .warning-left-element1-img {
+    width: 100%;
+    margin-top: 2vw;
+    margin-left: 7.5vw;
+  }
+  .warning-left-videlenie-2 {
+    width: 8.5vw;
+    margin-top: 15vw;
+    margin-left: 81vw;
+  }
+  .warning-right-element1 {
+    width: 97vw;
+    height: 51vw;
+  }
+  .warning-right-element2 {
+    width: 97vw;
+    height: 6vw;
+  }
+  .warning-tekst {
+    font-size: 7vw;
+    margin-top: 0.3vw;
+    animation: lin 2.5s linear infinite;
+  }
+  .tochki-plashka {
+    margin-top: -3.8vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.67vw;
+  }
+  @keyframes dv {
+    0% {
+      top: 160.5vw;
+      left: 75.5vw;
+    }
+    25% {
+      top: 167.5vw;
+      left: 81.5vw;
+    }
+    50% {
+      top: 175.5vw;
+      left: 62.5vw;
+    }
+    75% {
+      top: 185.5vw;
+      left: 91.5vw;
+    }
+    100% {
+      top: 196.5vw;
+      left: 59vw;
+    }
+  }
+  .plashki {
+    margin-top: 205vw;
+  }
 }
 
 @media screen and (max-width: 414px) and (orientation: landscape) {
